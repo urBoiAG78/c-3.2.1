@@ -14,10 +14,13 @@
 #include <iostream>
 
 using namespace std;
-int main(void) {
+
+int main(void)
+{
 int  vector[] = { 3, -5, 7, 10, -4, 14, 5, 2, -13 };
 int n = sizeof(vector) / sizeof(vector[0]);
-// Insert your code here
+/*this block of code sets the pointer to the array. Then the for loop checks the content of the array to see if it is lower than the current low number.
+ if so it will set the new low number to the small variable. Then the pointer is pushed over to the next element in the array and it repeats the process.*/
 
 int *Ptr = vector;
 int small = *Ptr;
